@@ -33,7 +33,7 @@ class App(QWidget):
                 msg = QMessageBox(self)
                 msg.setWindowTitle("Тадаааамм")
                 msg.setIcon(QMessageBox.Question)
-                msg.setText(f'Сегодня {row[0]} празднует свой {age} день рождения')
+                msg.setText(f'Сегодня {row[0]} празднует свой {age}-й день рождения')
 
                 buttonAceptar = msg.addButton("Удалить", QMessageBox.YesRole)
                 buttonCancelar = msg.addButton("Далее", QMessageBox.RejectRole)
@@ -41,7 +41,7 @@ class App(QWidget):
                 msg.exec_()
 
                 with open('C:\\Users\\%s\\Desktop\\birthday.txt' %user, 'a') as birthday:
-                    birthday.write(f'Сегодня {row[0]} празднует свой {age} день рождения\n')
+                    birthday.write(f'Сегодня {row[0]} празднует свой {age}-й день рождения\n')
 
                 if msg.clickedButton() == buttonAceptar:
                     cur.execute("DELETE FROM person WHERE full_name=?", (row[0],))
