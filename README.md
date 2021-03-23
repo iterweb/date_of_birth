@@ -9,7 +9,7 @@ pip install --user -r requirements.txt
 
 ### create_date.py (для добавления даты рождения)
 ![alt tag](https://github.com/pro100git/date_of_birth/blob/master/image/create_date.png "pro100git")​<br/>
-При первом запуске скрипта будет создана база данных sqlite3, в открывшемся окне можно добавить дату и имя (уникально для каждой даты). Присутствует проверка на коректность вводимых данных(число, месяц, год).
+При первом запуске скрипта будет создана база данных sqlite3, в открывшемся окне можно добавить дату и имя (уникально). Присутствует проверка на коректность вводимых данных(число, месяц, год).
 
 ### check_date.py (проверка и оповищение)
 ![alt tag](https://github.com/pro100git/date_of_birth/blob/master/image/check_date.png "pro100git")​<br/>
